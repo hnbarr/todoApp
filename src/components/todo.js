@@ -19,14 +19,12 @@ export default class Todo extends Component {
             btnValue: this.state.isClicked ? 'true' : 'false',
             todos: [...this.state.todos, this.state.todo]
         })
-        console.log(this.state.todos)
     }
 
     onChange = (e) => {
         this.setState({
             todo: e.target.value
         })
-        console.log(this.state.todo)
     }
 
     deleteTodo = (i) => {
